@@ -1,0 +1,14 @@
+{
+  "name": "quickdice",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": { "node": ">=22" },
+  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "scripts": {
+    "dev": "pnpm --filter @quickdice/web dev",
+    "build": "pnpm --filter @quickdice/web build",
+    "preview": "pnpm --filter @quickdice/web preview",
+    "typecheck": "pnpm --filter @quickdice/web exec tsc -b",
+    "test": "pnpm --filter @quickdice/web test"
+  }
+}
